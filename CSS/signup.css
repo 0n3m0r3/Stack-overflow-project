@@ -1,0 +1,246 @@
+/*Sommaire
+
+1.Global
+2.Left Side
+3.Right Side
+
+
+
+
+
+
+*/
+
+/*Global*/
+.body {
+	grid-column: span 3;
+	grid-row: span 2;
+	background-color: #EFF0F1;
+}
+
+
+.content {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 2;
+	grid-template-rows: 1;
+}
+
+@media (max-width: 500px) {
+	.content {
+		grid-template-columns: 1;
+		grid-template-rows: auto auto;
+	}
+}
+
+
+/*Left Side*/
+.content__left {
+	grid-column: 1;
+	font-size: 16px;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+@media (max-width: 500px) {
+	.content__left {
+		grid-column: 1;
+		grid-row: 1;
+		display: grid;
+		justify-content: center;
+		align-content: center;
+		padding: 12px;
+	}
+}
+
+.content__left h1 {
+	font-weight: normal;
+	padding-bottom: 6px;
+}
+
+.content__ask {
+	padding: 6px;
+}
+
+.content__ask span i{
+	color: #0095FF;
+}
+
+.content__unlock {
+	padding: 6px;
+	padding-right: 0;
+}
+
+.content__unlock i{
+	color: #0095FF;
+	padding-left: 4px;
+}
+
+.content__start {
+	color: #767e87;
+	font-size: 14px;
+	padding: 8px;
+}
+/*Right Side*/
+.content__right {
+grid-column: 2;
+display: grid;
+align-content: center;
+justify-content: center;
+}
+
+@media (max-width: 500px) {
+	.content__right {
+		grid-column: 1;
+		grid-row: 2;
+	}
+}
+
+.content__right a {
+	text-decoration: none;
+}
+
+
+.right__google,
+.right__facebook,
+.right__github {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+	border: solid 1px ;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.right__google {
+	border-color: #d6d9dc;
+	background-color: #fff;
+	text-align: center;
+}
+
+.right__google:hover {
+	background-color: #FAFAFB;
+	cursor: pointer;
+}
+
+.right__google img {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+	margin-bottom: -5px;
+}
+
+.right__facebook {
+	background-color: #385499;
+	border-color: #385499;
+	color: #fff;
+}
+
+.right__facebook i {
+	color: #fff;
+	font-size: 18px;
+}
+
+.right__facebook:hover {
+	background-color: #314A86;
+	cursor: pointer;
+}
+
+.right__github {
+	background-color: #2f3337;
+	border-color: #2f3337;
+	color: #fff;
+}
+
+.right__github i {
+	color: #fff;
+	font-size: 18px;
+}
+
+.right__github:hover {
+	background-color: #242729;
+	cursor: pointer;
+}
+
+.form {
+	margin-top: 40px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	border: solid 1px #d6d9dc;
+	padding: 12px;
+	padding-top: 25px;
+}
+
+.form label {
+	font-weight: bold;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	display: block;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #bbc0c4;
+	border-radius: 4px;
+	outline: none;
+	padding: 3px;
+	padding-left: 6px;
+}
+
+.form input:focus {
+	border-color: #6fbcf7;
+	box-shadow: 0 0 5px 0 #6fbcf7;
+}
+
+.form__name,
+.form__email,
+.form__password {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.form__signup-button {
+	display: block;
+	width: 90%;
+	height: 40px;
+	border: 1px solid #0095ff;
+	border-radius: 4px;
+	outline: none;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #0095ff;
+	color: #fff;
+}
+
+.form__signup-button:hover {
+	background-color: #0077CC;
+	cursor: pointer;
+}
+
+.right__bottom-text {
+	text-align: center;
+	display: block;
+	color: #000;
+	font-size: 12px;
+	margin-top: 3em;
+}
+
+.right__bottom-text a {
+	color: #0077cc;
+	text-decoration: none;
+}
+
+.right__bottom-text a:hover {
+	cursor: pointer;
+	color: #0095FF;
+}
+
+/*Error*/
+.form__error {
+	color: red;
+}

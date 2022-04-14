@@ -1,0 +1,2 @@
+<button class="nav-mid-bar__login-button" onclick="window.location.href='login.php'">Connexion</button>
+<button class="nav-mid-bar__register-button" onclick="window.location.href='signup.php'">Inscription</button>
